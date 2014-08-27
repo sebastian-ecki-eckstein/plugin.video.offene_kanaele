@@ -35,6 +35,9 @@ def show_homepage():
         # Dessau
         {'label': 'Dessau',
          'url': plugin.url_for('dessau')},
+        # Ilmenau
+        {'label': 'Ilmenau',
+         'url': plugin.url_for('ilmenau')},
         # Landau, Neustadt & Haßloch
         {'label': 'Landau, Neustadt & Haßloch',
          'url': plugin.url_for('landau')},
@@ -77,6 +80,13 @@ def berlin():
 def dessau():
     url = 'http://62.113.210.250/medienasa-live/_definst_/mp4:ok-dessau_high/playlist.m3u8'
     li = xbmcgui.ListItem('Dessau')
+    xbmc.Player(xbmc.PLAYER_CORE_AUTO).play(url, li)
+    return []
+
+@plugin.route('/ilmenau/')
+def ilmenau():
+    url = 'http://hls.cdn.fem-net.de/hls/istuff_live.m3u8'
+    li = xbmcgui.ListItem('Ilmenau')
     xbmc.Player(xbmc.PLAYER_CORE_AUTO).play(url, li)
     return []
 
