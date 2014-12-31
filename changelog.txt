@@ -1,0 +1,6 @@
+v1.1.0
+- added Ilmenau plublic/student tv station
+
+v1.0.1
+- initial commit with german public access tv stations
+
