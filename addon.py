@@ -141,7 +141,7 @@ def stendal():
 
 @plugin.route('/trier/')
 def trier():
-    url = 'mms://streaming.ok54.de/ok54'
+    url = 'rtmp://stream-cdn.ok54.de/tv/ok54'
     li = xbmcgui.ListItem('Trier')
     xbmc.Player(xbmc.PLAYER_CORE_AUTO).play(url, li)
     return []
