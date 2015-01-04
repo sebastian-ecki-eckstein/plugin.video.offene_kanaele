@@ -1,4 +1,5 @@
 v1.1.0
+- changed streaming url for trier, weinstrasse, suedwestpfalz
 - added Ilmenau plublic/student tv station
 
 v1.0.1
