@@ -113,7 +113,7 @@ def merseburg():
 
 @plugin.route('/pirmasens/')
 def pirmasens():
-    url = 'mms://streaming.ok54.de/suedwestpfalz-tv'
+    url = 'rtmp://stream-cdn.ok54.de/tv/okswp'
     li = xbmcgui.ListItem('Pirmasens, Rodalben & Zweibrücken')
     xbmc.Player(xbmc.PLAYER_CORE_AUTO).play(url, li)
     return []                
