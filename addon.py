@@ -92,7 +92,7 @@ def ilmenau():
 
 @plugin.route('/landau/')
 def landau():
-    url = 'mms://streaming.ok54.de/okweinstrasse'
+    url = 'rtmp://stream-cdn.ok54.de/tv/okweinstrasse'
     li = xbmcgui.ListItem('Landau, Neustadt & Haßloch')
     xbmc.Player(xbmc.PLAYER_CORE_AUTO).play(url, li)
     return []
